@@ -1,1 +1,54 @@
 // Mixins Here
+
+.mobilebtn(){
+    background: black;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-family: @nav-font;
+    font-size: 15px;
+
+   
+
+    &:hover{
+            background: white;
+            color: black;
+        }
+ 
+}
+
+.btnfirst(@radius, @font){
+    background: black;
+    color: white;
+    padding: 5px 20px;
+    border-radius: @radius;
+    font-family: @nav-font;
+    font-size: @font;
+
+   
+
+    &:hover{
+            background: white;
+            color: black;
+        }
+ 
+        @media @phone{
+            .mobilebtn();
+            width: 100%;
+            padding: 15px 70px 15px 70px;
+            text-align: center;
+            flex-direction: row;
+        }
+}
+
+.walkimg(){
+  padding-left: 10px;  
+}
+ 
+
+
+
+
+
+
+
