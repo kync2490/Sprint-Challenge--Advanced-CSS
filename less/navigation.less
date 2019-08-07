@@ -1,1 +1,57 @@
 // Navigation code here
+
+.navigation{
+      flex-direction: column;
+      background: @nav-bg;
+    width: 100%;
+    margin: 0 auto; 
+    border-bottom: 1px @nav-border solid;
+
+       nav{
+      display:flex;
+      margin: auto;
+      width: 40%;
+    justify-content: center;
+    align-items: center;
+      
+      text-decoration: none;
+      justify-content: space-between;
+      padding-bottom: 10px;
+
+        @media @phone{
+          margin: auto;
+          align-items: center;
+          justify-content: center;
+          width: 100%
+        }
+
+        a{
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        font-family: @nav-font;
+        
+        @media @phone{
+          width: auto;
+          flex-direction: row;
+          padding: 10px;
+          margin: auto;
+        }
+    }
+          
+    }
+
+    }
+
+    
+    
+   
+  .logo{
+    display:flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
